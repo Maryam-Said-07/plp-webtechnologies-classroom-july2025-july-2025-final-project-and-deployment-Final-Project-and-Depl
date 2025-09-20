@@ -664,9 +664,9 @@ section {
     color: #5d4e37;
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu - Mobile Navigation */
 .hamburger {
-    display: none;
+    display: flex; /* Temporarily always show for testing */
     flex-direction: column;
     cursor: pointer;
     z-index: 1001;
