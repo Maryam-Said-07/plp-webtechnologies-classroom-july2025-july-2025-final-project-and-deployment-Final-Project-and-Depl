@@ -666,7 +666,7 @@ section {
 
 /* Hamburger Menu - Mobile Navigation */
 .hamburger {
-    display: flex; /* Temporarily always show for testing */
+    display: none; /* Hidden by default, shown only on mobile */
     flex-direction: column;
     cursor: pointer;
     z-index: 1001;
