@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Maryam Said</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="grid-lines"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">M</span>
+                <span class="logo-text">MARYAM</span>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="index.html#skills">SKILLS</a></li>
+                    <li><a href="contact.html" class="active">CONTACT</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="cta-button">LET'S TALK</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Let's Connect</h1>
+                <p class="page-subtitle">I'm always interested in discussing new opportunities and collaborations</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info-section">
+                        <h2>Get In Touch</h2>
+                        <p>Whether you're looking for a collaborator, have a project in mind, or just want to chat about technology and cybersecurity, I'd love to hear from you!</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <a href="mailto:7.m.dias.6@gmail.com">7.m.dias.6@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <i class="fab fa-linkedin-in"></i>
+                                <div>
+                                    <h3>LinkedIn</h3>
+                                    <a href="https://www.linkedin.com/in/maryam-said-545272351" target="_blank">Connect with me</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Phone</h3>
+                                    <span>+254705316690</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="availability">
+                            <h3>Availability</h3>
+                            <p>I typically respond to messages within 24-48 hours. For urgent matters, please indicate so in your message subject line.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <form class="contact-form" id="contactForm">
+                            <h2>Send Me a Message</h2>
+                            
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="collaboration">Collaboration Opportunity</option>
+                                    <option value="project">Project Discussion</option>
+                                    <option value="job">Job Opportunity</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project, opportunity, or any questions you have..."></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    I'd like to receive updates about new projects and blog posts
+                                </label>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">Location</h2>
+                <div class="location-info">
+                    <p>Based in Kenya, available for remote work and local opportunities.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Maryam Said. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
