@@ -46,11 +46,13 @@ This portfolio was created to meet Week 8 Assignment requirements:
 
 ## 🌐 Live Website
 
-Live URL will be added after deployment to GitHub Pages
+**🚀 [Visit My Portfolio Website](https://maryam-said-07.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)**
+
+*Live URL: https://maryam-said-07.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/*
 
 ## 📞 Contact
 
-- **Email**: maryamsaid@student.uopeople.edu
+- **Email**: 7.m.dias.6@gmail.com
 - **LinkedIn**: [Maryam Said](https://www.linkedin.com/in/maryam-said-545272351)
 
 ## 📄 License
