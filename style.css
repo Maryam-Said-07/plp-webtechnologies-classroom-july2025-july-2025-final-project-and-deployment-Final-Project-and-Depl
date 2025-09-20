@@ -670,6 +670,20 @@ section {
     flex-direction: column;
     cursor: pointer;
     z-index: 1001;
+    padding: 10px;
+    position: relative;
+    background: transparent;
+    border: none;
+    pointer-events: auto;
+}
+
+.hamburger:hover {
+    background-color: rgba(184, 160, 130, 0.1);
+    border-radius: 8px;
+}
+
+.hamburger:active {
+    background-color: rgba(184, 160, 130, 0.2);
 }
 
 .hamburger-line {
@@ -679,6 +693,7 @@ section {
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
+    pointer-events: none; /* Prevent clicks on lines from interfering */
 }
 
 .hamburger.active .hamburger-line:nth-child(1) {
