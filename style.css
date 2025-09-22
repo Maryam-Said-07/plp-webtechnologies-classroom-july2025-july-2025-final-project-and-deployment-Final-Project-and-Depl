@@ -11,7 +11,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #4a4a4a;
-    background: linear-gradient(135deg, #f8f7f4 0%, #f2f0eb 50%, #ebe8e0 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 50%, #f5f5f5 100%);
     overflow-x: hidden;
     position: relative;
 }
@@ -46,21 +46,21 @@ body {
     left: 8%;
     width: 8px;
     height: 8px;
-    background: #b8a082;
+    background: #4a4a4a;
     border-radius: 50%;
     animation-delay: 0s;
     box-shadow: 
-        20px 0 0 #b8a082,
-        40px 0 0 #b8a082,
-        60px 0 0 #b8a082,
-        0 20px 0 #b8a082,
-        20px 20px 0 #b8a082,
-        40px 20px 0 #b8a082,
-        60px 20px 0 #b8a082,
-        0 40px 0 #b8a082,
-        20px 40px 0 #b8a082,
-        40px 40px 0 #b8a082,
-        60px 40px 0 #b8a082;
+        20px 0 0 #4a4a4a,
+        40px 0 0 #4a4a4a,
+        60px 0 0 #4a4a4a,
+        0 20px 0 #4a4a4a,
+        20px 20px 0 #4a4a4a,
+        40px 20px 0 #4a4a4a,
+        60px 20px 0 #4a4a4a,
+        0 40px 0 #4a4a4a,
+        20px 40px 0 #4a4a4a,
+        40px 40px 0 #4a4a4a,
+        60px 40px 0 #4a4a4a;
     animation-duration: 8s;
 }
 
@@ -69,7 +69,7 @@ body {
     right: 12%;
     width: 120px;
     height: 60px;
-    background: #d4c4a8;
+    background: #e0e0e0;
     border-radius: 80px 80px 80px 20px;
     animation-delay: 2s;
     animation-duration: 10s;
@@ -82,7 +82,7 @@ body {
     left: 15%;
     width: 60px;
     height: 100px;
-    background: radial-gradient(ellipse at center, #c9b896 0%, #b8a082 70%);
+    background: radial-gradient(ellipse at center, #f0f0f0 0%, #4a4a4a 70%);
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     animation-delay: 4s;
     animation-duration: 7s;
@@ -95,7 +95,7 @@ body {
     right: 35%;
     width: 80px;
     height: 80px;
-    background: linear-gradient(45deg, transparent 30%, #d4c4a8 31%, #d4c4a8 69%, transparent 70%);
+    background: linear-gradient(45deg, transparent 30%, #e0e0e0 31%, #e0e0e0 69%, transparent 70%);
     border-radius: 50%;
     animation-delay: 1s;
     animation-duration: 12s;
@@ -107,16 +107,16 @@ body {
     right: 25%;
     width: 4px;
     height: 4px;
-    background: #b8a082;
+    background: #4a4a4a;
     border-radius: 50%;
     animation-delay: 3s;
     animation-duration: 9s;
     box-shadow: 
-        15px 10px 0 #b8a082,
-        30px 5px 0 #b8a082,
-        45px 15px 0 #b8a082,
-        -10px 20px 0 #b8a082,
-        -25px 10px 0 #b8a082;
+        15px 10px 0 #4a4a4a,
+        30px 5px 0 #4a4a4a,
+        45px 15px 0 #4a4a4a,
+        -10px 20px 0 #4a4a4a,
+        -25px 10px 0 #4a4a4a;
 }
 
 /* Floating particles */
@@ -130,7 +130,7 @@ body {
     position: absolute;
     width: 4px;
     height: 4px;
-    background: #d4c4a8;
+    background: #e0e0e0;
     border-radius: 50%;
     opacity: 0.4;
     animation: floatUp 15s linear infinite;
@@ -260,7 +260,7 @@ body {
 }
 
 .logo-icon {
-    background: #b8a082;
+    background: #4a4a4a;
     color: white;
     width: 40px;
     height: 40px;
@@ -293,11 +293,11 @@ body {
 }
 
 .nav-menu a:hover {
-    color: #b8a082;
+    color: #4a4a4a;
 }
 
 .cta-button {
-    background: #b8a082;
+    background: #4a4a4a;
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 25px;
@@ -329,7 +329,7 @@ body {
     right: 50px;
     width: 120px;
     height: 120px;
-    background: radial-gradient(circle at 4px 4px, #d4c4a8 2px, transparent 2px);
+    background: radial-gradient(circle at 4px 4px, #e0e0e0 2px, transparent 2px);
     background-size: 25px 25px;
     opacity: 0.3;
     z-index: 1;
@@ -373,7 +373,7 @@ body {
 }
 
 .highlight {
-    color: #b8a082;
+    color: #4a4a4a;
 }
 
 .hero-description {
@@ -390,7 +390,7 @@ body {
 }
 
 .btn-primary {
-    background: #b8a082;
+    background: #4a4a4a;
     color: white;
     padding: 1rem 2rem;
     border-radius: 30px;
@@ -420,13 +420,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #b8a082;
+    color: #4a4a4a;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .social-link:hover {
-    background: #b8a082;
+    background: #4a4a4a;
     color: white;
     transform: translateY(-2px);
 }
@@ -448,7 +448,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    color: #b8a082;
+    color: #4a4a4a;
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -559,7 +559,7 @@ section {
 .project-icon {
     width: 80px;
     height: 80px;
-    background: #b8a082;
+    background: #4a4a4a;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -591,7 +591,7 @@ section {
 
 .tech-tag {
     background: rgba(255, 105, 180, 0.2);
-    color: #b8a082;
+    color: #4a4a4a;
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -617,7 +617,7 @@ section {
 
 .skill-item i {
     font-size: 3rem;
-    color: #b8a082;
+    color: #4a4a4a;
     margin-bottom: 1rem;
 }
 
@@ -653,7 +653,7 @@ section {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #b8a082;
+    color: #4a4a4a;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
@@ -732,7 +732,7 @@ section {
 .hamburger-line {
     width: 25px;
     height: 3px;
-    background-color: #b8a082;
+    background-color: #4a4a4a;
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
@@ -866,7 +866,7 @@ section {
 .about-text h3 {
     font-size: 1.5rem;
     margin: 2rem 0 1rem;
-    color: #b8a082;
+    color: #4a4a4a;
 }
 
 .about-text p {
@@ -889,7 +889,7 @@ section {
 }
 
 .drive-list i {
-    color: #b8a082;
+    color: #4a4a4a;
     width: 20px;
 }
 
@@ -909,7 +909,7 @@ section {
     content: "→";
     position: absolute;
     left: 0;
-    color: #b8a082;
+    color: #4a4a4a;
     font-weight: bold;
 }
 
@@ -938,7 +938,7 @@ section {
 
 .stat-item h3 {
     font-size: 2rem;
-    color: #b8a082;
+    color: #4a4a4a;
     margin-bottom: 0.5rem;
 }
 
@@ -971,7 +971,7 @@ section {
     top: 0;
     width: 3px;
     height: 100%;
-    background: #b8a082;
+    background: #4a4a4a;
 }
 
 .timeline-item::after {
@@ -982,7 +982,7 @@ section {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #b8a082;
+    background: #4a4a4a;
 }
 
 .timeline-content h3 {
@@ -991,7 +991,7 @@ section {
 }
 
 .timeline-date {
-    color: #b8a082;
+    color: #4a4a4a;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -1022,7 +1022,7 @@ section {
 
 .filter-btn.active,
 .filter-btn:hover {
-    background: #b8a082;
+    background: #4a4a4a;
     color: #5d4e37;
 }
 
@@ -1080,7 +1080,7 @@ section {
 .project-code {
     width: 50px;
     height: 50px;
-    background: #b8a082;
+    background: #4a4a4a;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1112,7 +1112,7 @@ section {
 }
 
 .project-features h4 {
-    color: #b8a082;
+    color: #4a4a4a;
     margin-bottom: 0.5rem;
 }
 
@@ -1152,7 +1152,7 @@ section {
 
 .future-card i {
     font-size: 3rem;
-    color: #b8a082;
+    color: #4a4a4a;
     margin-bottom: 1rem;
 }
 
@@ -1203,7 +1203,7 @@ section {
 
 .contact-method i {
     font-size: 1.5rem;
-    color: #b8a082;
+    color: #4a4a4a;
     width: 30px;
 }
 
@@ -1213,7 +1213,7 @@ section {
 }
 
 .contact-method a {
-    color: #b8a082;
+    color: #4a4a4a;
     text-decoration: none;
 }
 
@@ -1222,7 +1222,7 @@ section {
 }
 
 .availability h3 {
-    color: #b8a082;
+    color: #4a4a4a;
     margin-bottom: 0.5rem;
 }
 
@@ -1270,7 +1270,7 @@ section {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #b8a082;
+    border-color: #4a4a4a;
 }
 
 .form-group input::placeholder,
@@ -1304,7 +1304,7 @@ section {
 }
 
 .submit-btn {
-    background: #b8a082;
+    background: #4a4a4a;
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -1371,7 +1371,7 @@ section {
 
 /* Navigation Active State */
 .nav-menu a.active {
-    color: #b8a082;
+    color: #4a4a4a;
 }
 
 /* Additional Responsive Design */
