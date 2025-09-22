@@ -233,20 +233,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             if (isValid) {
-                // Simulate form submission
+                // Form is valid, allow actual submission to Formspree
                 const submitBtn = this.querySelector('.submit-btn');
                 const originalText = submitBtn.innerHTML;
                 
                 submitBtn.innerHTML = '<span class="btn-text">Sending...</span><i class="fas fa-spinner fa-spin"></i>';
                 submitBtn.disabled = true;
                 
-                // Simulate API call
-                setTimeout(() => {
-                    showFormStatus('success', 'Thank you! Your message has been sent successfully. I\'ll get back to you soon!');
-                    this.reset();
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                }, 2000);
+                // Actually submit the form to Formspree
+                this.submit();
             }
         });
     }
