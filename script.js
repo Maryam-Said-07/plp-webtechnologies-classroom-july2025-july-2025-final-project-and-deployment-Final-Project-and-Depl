@@ -180,101 +180,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact form validation and submission
+    // Contact form validation and submission - SIMPLIFIED FOR TESTING
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
+        // Remove complex validation temporarily to test basic submission
+        console.log('Contact form found and ready for submission');
+        
+        // Just add visual feedback on submit
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Clear previous errors
-            clearErrors();
-            
-            // Validate form
-            let isValid = true;
-            const formData = new FormData(this);
-            
-            // Name validation
-            const name = formData.get('name');
-            if (!name || name.trim().length < 2) {
-                showError('nameError', 'Please enter a valid name (at least 2 characters)');
-                isValid = false;
-            }
-            
-            // Email validation
-            const email = formData.get('email');
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!email || !emailRegex.test(email)) {
-                showError('emailError', 'Please enter a valid email address');
-                isValid = false;
-            }
-            
-            // Phone validation (optional but if provided, should be valid)
-            const phone = formData.get('phone');
-            if (phone && phone.trim().length > 0) {
-                const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
-                if (!phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''))) {
-                    showError('phoneError', 'Please enter a valid phone number');
-                    isValid = false;
-                }
-            }
-            
-            // Subject validation
-            const subject = formData.get('subject');
-            if (!subject) {
-                showError('subjectError', 'Please select a subject');
-                isValid = false;
-            }
-            
-            // Message validation
-            const message = formData.get('message');
-            if (!message || message.trim().length < 10) {
-                showError('messageError', 'Please enter a message (at least 10 characters)');
-                isValid = false;
-            }
-            
-            if (isValid) {
-                // Form is valid, allow actual submission to Formspree
-                const submitBtn = this.querySelector('.submit-btn');
-                const originalText = submitBtn.innerHTML;
-                
+            const submitBtn = this.querySelector('.submit-btn');
+            if (submitBtn) {
                 submitBtn.innerHTML = '<span class="btn-text">Sending...</span><i class="fas fa-spinner fa-spin"></i>';
                 submitBtn.disabled = true;
-                
-                // Actually submit the form to Formspree
-                this.submit();
             }
         });
-    }
-    
-    // Form validation helper functions
-    function showError(elementId, message) {
-        const errorElement = document.getElementById(elementId);
-        if (errorElement) {
-            errorElement.textContent = message;
-            errorElement.style.display = 'block';
-        }
-    }
-    
-    function clearErrors() {
-        const errorElements = document.querySelectorAll('.error-message');
-        errorElements.forEach(element => {
-            element.textContent = '';
-            element.style.display = 'none';
-        });
-    }
-    
-    function showFormStatus(type, message) {
-        const statusElement = document.getElementById('formStatus');
-        if (statusElement) {
-            statusElement.className = `form-status ${type}`;
-            statusElement.textContent = message;
-            statusElement.style.display = 'block';
-            
-            // Hide status message after 5 seconds
-            setTimeout(() => {
-                statusElement.style.display = 'none';
-            }, 5000);
-        }
     }
 
     // Add CSS animation keyframes dynamically
