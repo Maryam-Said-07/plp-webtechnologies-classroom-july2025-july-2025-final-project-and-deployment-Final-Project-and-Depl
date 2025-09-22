@@ -57,6 +57,15 @@
     </header>
 
     <main>
+        <!-- Success message for form submission -->
+        <div id="success-message" class="success-banner" style="display: none;">
+            <div class="success-content">
+                <i class="fas fa-check-circle"></i>
+                <span>Thank you! Your message has been sent successfully. I'll get back to you soon!</span>
+                <button onclick="closeSuccessMessage()" class="close-btn">&times;</button>
+            </div>
+        </div>
+        
         <section class="page-hero">
             <div class="container">
                 <h1 class="page-title">Let's Connect</h1>
@@ -104,8 +113,12 @@
                     </div>
 
                     <div class="contact-form-section">
-                        <form class="contact-form" id="contactForm">
+                        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xqayzlon" method="POST">
                             <h2>Send Me a Message</h2>
+                            
+                            <!-- Hidden input to prevent spam -->
+                            <input type="hidden" name="_subject" value="New Portfolio Contact">
+                            <input type="hidden" name="_next" value="https://maryam-said-07.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/contact.html?success=true">
                             
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
@@ -115,7 +128,7 @@
 
                             <div class="form-group">
                                 <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="_replyto" required>
                                 <span class="error-message" id="emailError"></span>
                             </div>
 

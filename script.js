@@ -311,4 +311,38 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(styleElement);
+    
+    // Check for success message from form submission
+    checkForSuccessMessage();
 });
+
+// Function to check URL parameters for success message
+function checkForSuccessMessage() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        showSuccessMessage();
+        // Clean up URL
+        const newUrl = window.location.href.split('?')[0];
+        window.history.replaceState({}, document.title, newUrl);
+    }
+}
+
+// Function to show success message
+function showSuccessMessage() {
+    const successMessage = document.getElementById('success-message');
+    if (successMessage) {
+        successMessage.style.display = 'block';
+        // Auto-hide after 5 seconds
+        setTimeout(() => {
+            closeSuccessMessage();
+        }, 5000);
+    }
+}
+
+// Function to close success message
+function closeSuccessMessage() {
+    const successMessage = document.getElementById('success-message');
+    if (successMessage) {
+        successMessage.style.display = 'none';
+    }
+}
